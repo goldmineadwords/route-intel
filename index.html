@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Route Intel — Bid Intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@800;900&display=swap" rel="stylesheet" />
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body { background: #0a1628; color: #e8f0ff; font-family: 'DM Mono', monospace; }
+      ::-webkit-scrollbar { width: 3px; }
+      ::-webkit-scrollbar-thumb { background: #2a3e5a; border-radius: 2px; }
+      @keyframes ping { 75%,100% { transform: scale(2.2); opacity: 0; } }
+      @keyframes fadeUp { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+      @keyframes slideIn { from { opacity: 0; transform: translateX(20px); } to { opacity: 1; transform: translateX(0); } }
+      @keyframes shimmer { 0% { background-position: -400px 0; } 100% { background-position: 400px 0; } }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      .rc { animation: fadeUp .3s ease forwards; transition: background .15s, border .15s; }
+      .rc:hover { background: #142040 !important; cursor: pointer; }
+      button, input, select, textarea { outline: none; font-family: inherit; }
+      input::placeholder, textarea::placeholder { color: #2a3e5a; }
+      details summary { list-style: none; }
+      details summary::-webkit-details-marker { display: none; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./src/main.jsx"></script>
+  </body>
+</html>
